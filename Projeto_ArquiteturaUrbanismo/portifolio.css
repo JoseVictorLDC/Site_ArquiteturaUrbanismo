@@ -1,5 +1,5 @@
-.row {
-    background-image: url('./public/IM.svg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+.row-footer {
+    background-image: url('./public/Imagem_rodape.svg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
     background-size: cover;
     background-position: center;
     color: rgb(0, 0, 0); /* Cor do texto no rodapé */

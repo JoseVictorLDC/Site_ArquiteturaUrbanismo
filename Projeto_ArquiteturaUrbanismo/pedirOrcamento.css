@@ -10,3 +10,16 @@
     justify-content: center;
     display: flex;
 }
+
+body {
+    background-image: url('./public/Imagem_pedirOrcamento.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: white;
+}
+
+.direita {
+    padding-left: 1000px;
+}

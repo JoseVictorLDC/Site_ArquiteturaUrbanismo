@@ -24,3 +24,20 @@
     text-align: center;
     z-index: 10;
 }
+.filter-bar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    border-right: 1px solid #ced4da;
+}
+
+.item {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #ced4da;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}

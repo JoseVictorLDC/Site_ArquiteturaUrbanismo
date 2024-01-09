@@ -47,30 +47,30 @@
                             <h1 class="text-center text-dark">ORÇAMENTO</h1>
                             <p class="text-center text-dark">Para pedir um orçamento deve preencher um campo abaixo para que consiga ter uma reunião online com a profissional. Após uma análise das informações adquiridas sobre o projeto enviaremos o mais rápido possível um orçamento detalhado.</p>
                     
-                            <form>
+                            <form action="https://formsubmit.co/jvldc12345@gmail.com" method="POST">
                                 <div class="mb-3">
                                     <label for="nome" class="form-label text-black">Nome:</label>
-                                    <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+                                    <input type="text" class="form-control" name="nome" placeholder="Seu Nome" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label text-black">Email:</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Seu Email">
+                                    <input type="email" class="form-control" name="email" placeholder="Seu Email" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="date" class="form-label text-black">Data (Selecione três datas):</label>
-                                    <input type="date" class="form-control" id="email" placeholder="Seu Email">
+                                    <input type="date" class="form-control" name="data 1" required>
                                     <br>
-                                    <input type="date" class="form-control" id="email" placeholder="Seu Email">
+                                    <input type="date" class="form-control" name="data 2" >
                                     <br>
-                                    <input type="date" class="form-control" id="email" placeholder="Seu Email">
+                                    <input type="date" class="form-control" name="data 3" >
                                 </div>
                                 <div class="mb-3">
                                     <label for="horario" class="form-label text-black">Horario (Selecione três horarios):</label>
-                                    <input type="time" class="form-control" id="email" placeholder="Seu Email">
+                                    <input type="time" class="form-control" name="horario 1" required>
                                     <br>
-                                    <input type="time" class="form-control" id="email" placeholder="Seu Email">
+                                    <input type="time" class="form-control" name="horario 2" >
                                     <br>
-                                    <input type="time" class="form-control" id="email" placeholder="Seu Email">
+                                    <input type="time" class="form-control" name="horario 3" >
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-check-label">
@@ -78,8 +78,13 @@
                                         *A reunião será feita pelo Google Meet e o dia e horário serão confirmados pelo email acima.
                                     </label>
                                 </div>
-            
+                                
                                 <button type="submit" class="btn btn-primary">Enviar</button>
+
+                                <input type="hidden" name="_subject" value="Pedido de Orçamento!">
+                                <input type="text" name="_honey" style="display: none;">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="http://localhost:5500/pedirOrcamento.html">
                             </form>
                         </div>
                     </div>

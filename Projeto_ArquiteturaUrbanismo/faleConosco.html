@@ -47,30 +47,35 @@
             <h1 class="text-center text-dark">Formulário de Comentário</h1>
             <p class="text-center text-dark">Complete o formulário abaixo para nos enviar algum comentário.</p>
 
-            <form>
+            <form action="https://formsubmit.co/jvldc12345@gmail.com" method="POST">
                 <div class="mb-3">
                     <label for="nome" class="form-label text-dark">Nome:</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+                    <input type="text" class="form-control" name="nome" placeholder="Seu Nome" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label text-dark">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Seu Email">
+                    <input type="email" class="form-control" name="email" placeholder="Seu Email" required>
                 </div>
                 <div class="mb-3">
                     <label for="assunto" class="form-label text-dark">Assunto:</label>
-                    <select class="form-select" id="assunto">
-                        <option value="opcao0"></option>
-                        <option value="opcao1">Informações adicionais</option>
-                        <option value="opcao2">Sugestões</option>
-                        <option value="opcao3">Reclamações</option>
-                        <option value="opcao4">Outros</option>
+                    <select class="form-select" name="assunto">
+                        <option value="Não escolheu"></option>
+                        <option value="Informações adicionais">Informações adicionais</option>
+                        <option value="Sugestões">Sugestões</option>
+                        <option value="Reclamações">Reclamações</option>
+                        <option value="Outros">Outros</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="comentario" class="form-label text-dark">Comentário:</label>
-                    <textarea class="form-control" id="comentario" rows="4" placeholder="Seu comentário"></textarea>
+                    <textarea class="form-control" name="comentario" rows="4" placeholder="Seu comentário" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar Reclamação</button>
+
+                <input type="hidden" name="_subject" value="Mensagem de FALE CONOSCO!">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://localhost:5500/faleConosco.html">
             </form>
         </div>
     </div>

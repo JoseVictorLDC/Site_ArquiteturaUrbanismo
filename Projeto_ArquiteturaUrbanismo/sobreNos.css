@@ -28,3 +28,23 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 20px;
+    height: 600px;
+    gap: 50px;
+}
+
+.imagem {
+    padding-left: 100px;
+    height: 600px;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+

@@ -24,3 +24,34 @@
     text-align: center;
     z-index: 10;
 }
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagem {
+    height: 400px;
+    border-radius: 15px;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+.coluna-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 1000px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}

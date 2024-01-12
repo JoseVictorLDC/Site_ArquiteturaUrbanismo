@@ -81,18 +81,38 @@
 }
 
 .row-footer {
-    background-image: url('./public/Imagem_rodape.svg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: center;
-
     color: rgb(0, 0, 0); /* Cor do texto no rodapé */
-    
-    justify-content: center;
+    column-count: 2;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
 
 .container-footer-coluna {
     display: flex;
     flex-direction: column;
+    width: 150px;
+    gap: 10px;
+}
+
+.container-footer {
+    background-image: url('./public/Imagem_rodape.svg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.col-esquerda {
+    padding: 0px;
+    height: 200px;
+    width: 350px;
+    padding-bottom: 50px;
+}
+
+
+.col-direita {
+    padding: 0px;
+    height: 400px;
+    width: 400px;
 }

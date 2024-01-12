@@ -19,3 +19,8 @@ body {
     background-position: center;
     background-color: white;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+}

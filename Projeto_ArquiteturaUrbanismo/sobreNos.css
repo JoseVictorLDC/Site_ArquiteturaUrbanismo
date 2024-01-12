@@ -35,7 +35,6 @@
     padding-left: 100px;
     padding-top: 20px;
     height: 600px;
-    gap: 50px;
 }
 
 .imagem {
@@ -46,5 +45,42 @@
 .linha {
     display: flex;
     flex-direction: row;
+}
+
+/* Estilo personalizado para os botões */
+.social-btn {
+    background-color: rgba(243, 180, 149, 0.802);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: rgb(191, 81, 59);
+}
+
+/* Estilo para centralizar o texto e a imagem dentro do botão */
+.social-btn img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.social-btn span {
+    vertical-align: middle;
+    display: inline-block;
+    color: #fff;
+}
+
+.imagem-footer {
+    width: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-bottom: 20px;
 }
 

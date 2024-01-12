@@ -2,23 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-rbs5qOMt0LkVrGl3gR9BU8Jq5paTQOp6Ztf2bHAu8S+g1s8TUfScb2t9v7PKJeTn" crossorigin="anonymous">
-    <link rel="stylesheet" href="teste.css">
-    <title>Mouse Hover Effect with Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navbar com Traço</title>
+    <!-- Adicione o link para o Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./teste.css">
 </head>
 <body>
 
-<div class="container mt-5">
-    <div class="image-container position-relative overflow-hidden">
-        <img src="./Imagens_portifolio/Banheiro/BANHEIRO 1 PAULO E ANA.jpg" alt="Imagem" class="img-fluid hover-image">
-        <div class="overlay">
-            <div class="overlay-text">Seu texto aqui</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Meu Site</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
         </div>
     </div>
-</div>
+</nav>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8+ua/C8V9Z6GgA5ISXtXVIuql1uxHfIQg8SfC7VO6MR6P/4U9niJ7GkC1f7" crossorigin="anonymous"></script>
-
+<!-- Adicione o link para o Bootstrap 5 JS e o Popper.js (necessário para alguns componentes do Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

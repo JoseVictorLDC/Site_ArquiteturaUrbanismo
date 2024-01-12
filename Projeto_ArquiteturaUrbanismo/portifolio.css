@@ -27,7 +27,7 @@
 
 .item img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .col-md-9{
@@ -47,7 +47,7 @@
 }
 
 .overlay {
-    border-radius: 10px;
+    border-radius: 15px;
     position: absolute;
     top: 0;
     left: 0;
@@ -70,6 +70,7 @@
 
 .image-container:hover .overlay {
     opacity: 1;
+    border-radius: 0;
 }
 
 .quadrado {
@@ -77,5 +78,13 @@
 }
 
 .image-container:hover .hover-image {
-    transform: scale(1.1); /* Ajuste o valor conforme necessário para o efeito de zoom */
+    transform: scale(1.05); /* Ajuste o valor conforme necessário para o efeito de zoom */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid {
+    padding-top: 20px;
 }

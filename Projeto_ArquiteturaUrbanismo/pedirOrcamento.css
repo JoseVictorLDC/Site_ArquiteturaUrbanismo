@@ -23,3 +23,12 @@ body {
 .direita {
     padding-left: 1000px;
 }
+
+.container-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-top: 10px;
+}

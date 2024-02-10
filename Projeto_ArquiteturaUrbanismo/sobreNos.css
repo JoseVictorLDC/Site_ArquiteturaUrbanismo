@@ -1,23 +1,10 @@
-.row-footer {
-    background-image: url('./public/Imagem_rodape.svg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: center;
-    color: rgb(0, 0, 0); /* Cor do texto no rodapé */
-    width: max-content;
-    padding: 400px;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    justify-content: center;
-    display: flex;
-}
-
 .color-1 {
-    background-color: rgb(161, 77, 35);
+    background-color: rgb(123, 45, 29);
     border-radius: 10px;
 }
 
 .color-2 {
-    background-color: rgb(123, 45, 29);
+    background-color: rgb(139, 66, 30);
     border-radius: 10px;
 }
 
@@ -29,34 +16,57 @@
     padding-bottom: 20px;
 }
 
+.containerSobreNos {
+    width: 80vw;
+}
+
+.coluna-geral-dados {
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .coluna {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    padding-top: 20px;
     height: 600px;
 }
 
 .imagem {
-    padding-left: 100px;
+    padding-left: 50px;
     height: 600px;
 }
 
 .linha {
     display: flex;
     flex-direction: row;
+    gap: 5vw;
 }
 
 /* Estilo personalizado para os botões */
-.social-btn {
-    background-color: rgba(243, 180, 149, 0.802);
+.social-btn1 {
+    background-color: rgb(166, 81, 39);
     color: #fff;
     border: none;
     transition: background-color 0.3s;
 }
 
-.social-btn:hover {
-    background-color: rgb(191, 81, 59);
+.social-btn1:hover {
+    background-color: rgb(187, 94, 47);
+    color: white;
+}
+
+.social-btn2 {
+    background-color: rgb(202, 107, 59);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.social-btn2:hover {
+    background-color: rgb(236, 123, 66);
+    color: white;
 }
 
 /* Estilo para centralizar o texto e a imagem dentro do botão */
@@ -75,12 +85,273 @@
     width: 30px;
 }
 
-.container {
+.containerLink {
     display: flex;
     flex-direction: column;
 }
 
-.btn {
-    margin-bottom: 20px;
+.row-footer {
+    color: rgb(0, 0, 0);
+    /* Cor do texto no rodapé */
+    column-count: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 200px;
 }
 
+.container-footer-coluna {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 10px;
+}
+
+.container-footer {
+    background-image: url('./public/Imagem_rodape.svg');
+    /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: bottom;
+    height: 650px;
+}
+
+.col-esquerda {
+    padding: 0px;
+    height: 200px;
+    width: 350px;
+    padding-bottom: 50px;
+}
+
+
+.col-direita {
+    padding: 0px;
+    height: 400px;
+    width: 400px;
+}
+
+.social-btn3 {
+    background-color: rgb(160, 82, 45);
+    color: #000000;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.social-btn3:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.25s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 50%;
+}
+
+
+.navbarMenu {
+    display: none;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    color: white;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: transform 0.3s ease-out;
+    transform: translateX(100%);
+}
+
+.menu-popup a {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+.imagemMenu {
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+    margin-left: 20px;
+}
+
+.text-white {
+    padding: 20px;
+    padding-bottom: 10vh;
+}
+
+.containerNavBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 500px) {
+    .col-esquerda {
+        padding: 0px;
+        margin: 0px;
+        font-size: small;
+        width: 30vw;
+        margin-bottom: 100px;
+    }
+
+    .col-direita {
+        padding: 0px;
+        margin: 0px;
+        font-size: small;
+        width: 50vw;
+    }
+
+    .container-footer {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .row-footer {
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 10px;
+        width: 100vw;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu-popup {
+        display: block;
+    }
+
+    .navbar-navMenu .nav-linkMenu {
+        position: relative;
+    }
+
+    .navbar-navMenu .nav-linkMenu::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: #000000;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.25s ease;
+        margin-top: 0.5px;
+    }
+
+    .navbar-navMenu .nav-linkMenu:hover::after,
+    .navbar-navMenu .nav-linkMenu.active::after {
+        width: 10%;
+    }
+
+    .navbarMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #ffffff;
+        color: white;
+    }
+
+    .coluna-geral {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .containerSobreNos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linha {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .coluna {
+        padding: 0px;
+        width: 90vw;
+    }
+
+    .imagem {
+        width: 88vw;
+        max-width: 300px;
+        max-height: 370px;
+        height: 58vh;
+        padding: 0px;
+    }
+
+    .col-md {
+        margin-bottom: 10px;
+        width: 90vw;
+        padding: 0px;
+    }
+
+    .containerLink {
+        width: 90vw;
+    }
+
+    .text-white {
+        padding: 20px;
+        padding-bottom: 5vh;
+    }
+}
